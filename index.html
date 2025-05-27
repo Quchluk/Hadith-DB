@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Hadith Collections</title>
+  <meta charset="UTF-8">
+  <title>Hadith Collections Viewer</title>
+  <style>
+    body { font-family: sans-serif; padding: 2em; background: #f8f9fa; }
+    pre { background: white; padding: 1em; border: 1px solid #ccc; overflow-x: auto; }
+  </style>
 </head>
 <body>
-  <pre id="output"></pre>
+  <h1>📖 Hadith Collections</h1>
+  <pre id="output">Loading...</pre>
 
   <script>
     fetch('hadith_books_meta.json')
       .then(response => response.json())
       .then(data => {
         document.getElementById('output').textContent = JSON.stringify(data, null, 2);
+      })
+      .catch(error => {
+        document.getElementById('output').textContent = "Error loading JSON: " + error;
       });
   </script>
 </body>
