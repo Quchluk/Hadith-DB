@@ -6,7 +6,6 @@
     "date": "9th century CE",
     "findspot": "Bukhara (present-day Uzbekistan)",
     "description": "One of the most authentic collections of hadith in Sunni Islam, compiled by Muhammad ibn Ismail al-Bukhari.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Sahih_al-Bukhari.jpg",
     "link": "https://sunnah.com/bukhari"
   },
   {
@@ -16,7 +15,6 @@
     "date": "9th century CE",
     "findspot": "Nishapur (present-day Iran)",
     "description": "Considered the second most authentic hadith collection after Sahih al-Bukhari.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/5/55/Sahih_Muslim.jpg",
     "link": "https://sunnah.com/muslim"
   },
   {
@@ -26,7 +24,6 @@
     "date": "9th century CE",
     "findspot": "Sijistan (present-day Iran/Afghanistan)",
     "description": "Famous for its focus on legal rulings and fiqh-related narrations.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Sunan_Abu_Dawud.jpg",
     "link": "https://sunnah.com/abudawud"
   },
   {
@@ -36,7 +33,6 @@
     "date": "9th century CE",
     "findspot": "Tirmidh (present-day Uzbekistan)",
     "description": "Includes commentary and classification of hadiths; popular for its analytical approach.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Jami_Tirmidhi.jpg",
     "link": "https://sunnah.com/tirmidhi"
   },
   {
@@ -46,7 +42,6 @@
     "date": "9th century CE",
     "findspot": "Nasa (present-day Turkmenistan)",
     "description": "Highly regarded for its precision and methodology among the six major Sunni collections.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/3/38/Sunan_Nasai.jpg",
     "link": "https://sunnah.com/nasai"
   },
   {
@@ -56,7 +51,6 @@
     "date": "9th century CE",
     "findspot": "Qazvin (present-day Iran)",
     "description": "Contains many hadiths not found in other major collections, making it both valuable and debated.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Sunan_Ibn_Majah.jpg",
     "link": "https://sunnah.com/ibnmajah"
   },
   {
@@ -66,7 +60,6 @@
     "date": "9th century CE",
     "findspot": "Baghdad, Abbasid Caliphate",
     "description": "A massive collection with over 30,000 hadiths organized by companion rather than topic.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/d/de/Musnad_Ahmad.jpg",
     "link": "https://en.wikipedia.org/wiki/Musnad_Ahmad_ibn_Hanbal"
   },
   {
@@ -76,7 +69,6 @@
     "date": "8th century CE",
     "findspot": "Medina",
     "description": "One of the earliest hadith collections, combining hadith with legal opinions of Medina scholars.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Muwatta_Malik.jpg",
     "link": "https://sunnah.com/urn/127030"
   },
   {
@@ -86,7 +78,6 @@
     "date": "9th century CE",
     "findspot": "Samarkand",
     "description": "An early hadith collection with a more historical and biographical scope.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Sunan_Al-Darimi.jpg",
     "link": "https://sunnah.com/darimi"
   }
 ]
