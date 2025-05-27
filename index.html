@@ -4,19 +4,53 @@
   <meta charset="UTF-8">
   <title>Hadith Collections Viewer</title>
   <style>
-    body { font-family: sans-serif; padding: 2em; background: #f8f9fa; }
-    pre { background: white; padding: 1em; border: 1px solid #ccc; overflow-x: auto; }
+    body {
+      font-family: sans-serif;
+      padding: 2em;
+      background: #f4f4f4;
+    }
+    .card {
+      background: white;
+      border: 1px solid #ddd;
+      padding: 1em;
+      margin-bottom: 1em;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+    .card img {
+      max-width: 150px;
+      float: right;
+      margin-left: 1em;
+    }
+    .card h2 {
+      margin-top: 0;
+    }
   </style>
 </head>
 <body>
   <h1>📖 Hadith Collections</h1>
-  <pre id="output">Loading...</pre>
+  <div id="output">Loading...</div>
 
   <script>
     fetch('hadith_books_meta.json')
       .then(response => response.json())
       .then(data => {
-        document.getElementById('output').textContent = JSON.stringify(data, null, 2);
+        const container = document.getElementById('output');
+        container.innerHTML = '';
+        data.forEach(book => {
+          const div = document.createElement('div');
+          div.className = 'card';
+          div.innerHTML = `
+            <img src="${book.image}" alt="${book.name}">
+            <h2>${book.name} <small>(${book.name_ar})</small></h2>
+            <p><strong>Author:</strong> ${book.author}</p>
+            <p><strong>Date:</strong> ${book.date}</p>
+            <p><strong>Findspot:</strong> ${book.findspot}</p>
+            <p>${book.description}</p>
+            <p><a href="${book.link}" target="_blank">Read more →</a></p>
+          `;
+          container.appendChild(div);
+        });
       })
       .catch(error => {
         document.getElementById('output').textContent = "Error loading JSON: " + error;
